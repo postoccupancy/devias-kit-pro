@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repo is a download of the Devias Material UI Kit Pro v6.0.0-Standard Plus for TypeScript. 
+
+The downloaded kit is adapted to a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting started
 
@@ -26,7 +28,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 
 
-# Pushing commits
+## Pushing commits
 The GitHub Actions CI workflow (`.github/workflows/ci.yml`) runs:
 `npm ci && npm run build && npm run lint` on every PR to the repo. 
 Save time by testing and resolving these before every commit. 
