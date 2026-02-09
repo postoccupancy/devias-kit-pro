@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "devCommand": "npm run dev",
+  "framework": "nextjs",
+  "nodeVersion": "20.x",
+  "env": [
+    {
+      "key": "NEXT_PUBLIC_API_URL",
+      "value": "@next_public_api_url",
+      "type": "secret"
+    },
+    {
+      "key": "NEXT_PUBLIC_MAPBOX_TOKEN",
+      "value": "@next_public_mapbox_token",
+      "type": "secret"
+    }
+  ]
+}
