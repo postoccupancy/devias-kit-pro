@@ -1,6 +1,4 @@
-This repo is a download of the Devias Material UI Kit Pro v6.0.0-Standard Plus for TypeScript. 
-
-The downloaded kit is adapted to a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This repo is a download of the Devias Material UI Kit Pro v6.0.0-Standard Plus for TypeScript, adapted to a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting started
 
@@ -30,53 +28,56 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Pushing commits
 The GitHub Actions CI workflow (`.github/workflows/ci.yml`) runs:
-`npm ci && npm run build && npm run lint` on every PR to the repo. 
+```bash
+npm ci && npm run build && npm run lint
+``` 
+on every PR to the repo. 
+
 Save time by testing and resolving these before every commit. 
-`npm run lint`
-`npm run build`
+```bash
+npm run lint
+npm run build
+```
 
 
 ## About Next.js
 
-To learn more about Next.js, take a look at the following resources:
-
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js GitHub repository](https://github.com/vercel/next.js/)
 
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
 ## Optional Vercel config
 
-`vercel.json` 
+[`vercel.json`](/vercel.json) 
 - Pins Node to 20.x, identifies Next.js framework.
 - Documents build/install/dev commands explicitly.
 - Includes placeholder for environment variable setup (update with actual secret names when deploying).
 
-`.vercelignore`
+[`.vercelignore`](/.vercelignore)
 - Excludes git metadata, docs, and config from the deployment bundle (saves time/bandwidth).
 
 
 ## Other config
 
-`.github/dependabot.yml` - makes weekly npm updates
+[`.github/dependabot.yml`](/.github/dependabot.yml) - makes weekly npm updates
 
-`.nvmrc` - pins Node version 20
+[`.nvmrc`](/.nvmrc) - pins Node version 20
 
-`.env.example` -- example .env file, copy to `.env.local`
+[`.env.example`](/.env.example) -- example .env file, copy to `.env.local`
 
 
 ## Governance docs boilerplate
 
-`CONTRIBUTING.md` 
-`CODEOWNERS`
+[`CONTRIBUTING.md`](/CONTRIBUTING.md) 
+[`CODEOWNERS`](/.github/CODEOWNERS)
 
 
 ## GitHub repo settings: branch protection and required status checks
