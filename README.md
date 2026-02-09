@@ -34,7 +34,7 @@ Save time by testing and resolving these before every commit.
 `npm run build`
 
 
-## Learn More
+## About Next.js
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -43,8 +43,58 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Optional Vercel config
+
+`vercel.json` 
+- Pins Node to 20.x, identifies Next.js framework.
+- Documents build/install/dev commands explicitly.
+- Includes placeholder for environment variable setup (update with actual secret names when deploying).
+
+`.vercelignore`
+- Excludes git metadata, docs, and config from the deployment bundle (saves time/bandwidth).
+
+
+## Other config
+
+`.github/dependabot.yml` - makes weekly npm updates
+
+`.nvmrc` - pins Node version 20
+
+`.env.example` -- example .env file, copy to `.env.local`
+
+
+## Governance docs boilerplate
+
+`CONTRIBUTING.md` 
+`CODEOWNERS`
+
+
+## GitHub repo settings: branch protection and required status checks
+
+✅ *Require a pull request before merging*
+Require approvals: 1 (or more if you want peer review)
+Dismiss stale PR approvals when new commits are pushed
+
+✅ *Require status checks to pass before merging*
+Require branches to be up to date before merging
+Check required: build (the job from ci.yml)
+
+✅ *Require code reviews*
+Require at least 1 approval from CODEOWNERS (optional but recommended for team projects; for solo template, can skip)
+
+✅ *Require conversation resolution before merging*
+Forces resolution of any PR comments/discussions
+
+✅ *Require branches to be up to date before merging*
+Already mentioned above, but automatic rebases are helpful
+
+✅ *Include administrators in restrictions (optional)*
+Ensures even org owners follow the rules
